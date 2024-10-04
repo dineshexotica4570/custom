@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Slider</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <style>
+        /* Basic styling for the slider */
+        #svg-slider {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .slick-slide {
+            padding: 10px;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            color: black; /* Arrow color */
+        }
+
+        svg {
+            width: 100%; /* Scale the SVG to fit the slider */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="svg-slider" class="slider"></div>
+
+    <script>
+        $(document).ready(function() {
+            var apiUrl = 'https://slateblue-goldfish-894680.hostingersite.com/custom-app/svggetapi.php';
+            var baseUrl = 'https://slateblue-goldfish-894680.hostingersite.com/custom-app/'; // Base URL to prepend
+
+            // Fetch the list of SVG file paths
+            $.getJSON(apiUrl, function(data) {
+                var svgSlider = $('#svg-slider');
+                
+                // Fetch each SVG and add to slider container
+                data.forEach(function(svgPath) {
+                    var fullUrl = baseUrl + svgPath; // Append the base URL to the file path
+                    fetchSVG(fullUrl, svgSlider);
+                });
+
+                // Initialize the slider after all SVGs are loaded
+                setTimeout(function() {
+                    svgSlider.slick({
+                        dots: true,             // Show navigation dots
+                        infinite: true,         // Infinite loop
+                        slidesToShow: 1,        // Show one slide at a time
+                        slidesToScroll: 1,      // Scroll one slide at a time
+                        prevArrow: '<button class="slick-prev">←</button>', // Custom prev arrow
+                        nextArrow: '<button class="slick-next">→</button>'  // Custom next arrow
+                    });
+                }, 1000); // Delay to ensure SVGs are loaded
+            });
+
+            // Function to fetch and insert SVGs into the DOM
+            function fetchSVG(url, container) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.overrideMimeType('image/svg+xml'); // Treat response as SVG
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        var svg = xhr.responseXML.documentElement;
+                        var slide = $('<div>').append(svg); // Wrap the SVG in a slide div
+                        container.append(slide); // Add the slide to the slider
+                    } else {
+                        console.log('Failed to load SVG: ' + url);
+                    }
+                };
+                xhr.send();
+            }
+        });
+    </script>
+</body>
+</html>
