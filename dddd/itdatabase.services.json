@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "66d6b3c25bd9945ab28843da"
+  },
+  "name": "Ecommerce Development",
+  "description": "Our website is more than a brochure. Our website is meant to inspire action.",
+  "image": "uploads\\1727867986133.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d6b3ef5bd9945ab28843e9"
+  },
+  "name": "Custom Plugin development",
+  "description": "Plugins are packages of code that extend the core functionality of WordPress.",
+  "image": "uploads\\1727868469304.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d6b4065bd9945ab28843ec"
+  },
+  "name": "API Development",
+  "description": "API stands for application programming interface. … This can simplify app development,saving time and money.",
+  "image": "uploads\\1727868654242.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd2f9f901e1d307765e360"
+  },
+  "name": "Shopify Apps",
+  "description": "Make Custom apps public and private apps. Make shopify apps in any language like React, Node.js, PHP.",
+  "image": "uploads\\1727868831547.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd3058901e1d307765e375"
+  },
+  "name": "Web Development",
+  "description": "We provide website development services that are on the cutting edge of today’s technologies.\r\n\r\n",
+  "image": "uploads\\1727869016357.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd319e901e1d307765e378"
+  },
+  "name": "Web UI/UX Design",
+  "description": "A specialization of web design that deals with the controls people use to interact with a website or app,\r\n\r\n",
+  "image": "uploads\\1727869342991.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd3269901e1d307765e393"
+  },
+  "name": "Website Migrations",
+  "description": "Website migration is the transfer of a website from one web host to another.\r\n\r\n",
+  "image": "uploads\\1727869545970.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd32ec901e1d307765e39c"
+  },
+  "name": "CMS Development",
+  "description": "Content Management Systems (CMS) are a necessity, and not just for e-commerce sites.\r\n\r\n",
+  "image": "uploads\\1727869676691.jpg",
+  "__v": 0
+}]

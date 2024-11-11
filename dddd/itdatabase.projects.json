@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "66d6a54c5fc3eda0221670de"
+  },
+  "title": "Blog Website",
+  "image": "uploads\\1727870564332.png",
+  "category": {
+    "$oid": "66d69fb0b0ac231445064831"
+  },
+  "createdAt": {
+    "$date": "2024-09-03T05:57:32.429Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T12:02:44.340Z"
+  },
+  "__v": 0,
+  "client": "ASU Company",
+  "description": "This is a blog website built using WordPress posts, with a custom theme and custom templates.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "projectDate": "01 March, 2020 to 05 March, 2020",
+  "projectUrl": "https://recession.org/"
+},
+{
+  "_id": {
+    "$oid": "66d6a55d5fc3eda0221670e2"
+  },
+  "title": "Courses Booking",
+  "image": "uploads\\1727870865914.png",
+  "category": {
+    "$oid": "66d69fb0b0ac231445064831"
+  },
+  "createdAt": {
+    "$date": "2024-09-03T05:57:49.871Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T12:07:45.935Z"
+  },
+  "__v": 0,
+  "client": "ASU Company",
+  "description": "This is a course booking website where users receive a certification upon completing the course. It is built using WooCommerce with custom templates.\r\n",
+  "projectDate": "01 March, 2020 to 05 March, 2020",
+  "projectUrl": "http://imageama.nsw.edu.au/IAMA/"
+},
+{
+  "_id": {
+    "$oid": "66d6a56e5fc3eda0221670e6"
+  },
+  "title": "Ecommerce Wbsite",
+  "image": "uploads\\1727871199636.png",
+  "category": {
+    "$oid": "66d6a046b0ac231445064868"
+  },
+  "createdAt": {
+    "$date": "2024-09-03T05:58:06.718Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T12:13:19.653Z"
+  },
+  "__v": 0,
+  "client": "ASU Company",
+  "description": "This is an e-commerce website where users can purchase products. It is built using Node.js, React, and MongoDB.\r\n\r\n\r\n\r\n\r\n\r\n",
+  "projectDate": "01 March, 2020 to 05 March, 2020",
+  "projectUrl": "https://zoonix-store.vercel.app"
+},
+{
+  "_id": {
+    "$oid": "67023aa7dc5e5cfd91244025"
+  },
+  "title": "Photo Contest",
+  "image": "uploads\\1728199353260.png",
+  "category": {
+    "$oid": "66d69fb0b0ac231445064831"
+  },
+  "description": "This is a PhotoContest website where a custom post type in WordPress is used for the photo contest form, allowing users to participate. The form includes Stripe payment integration.",
+  "client": "USA",
+  "projectDate": "01 March, 2023 to 20 March, 2023",
+  "projectUrl": "https://flashoo.co/",
+  "createdAt": {
+    "$date": "2024-10-06T07:22:15.530Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-06T07:22:33.287Z"
+  },
+  "__v": 0
+}]
